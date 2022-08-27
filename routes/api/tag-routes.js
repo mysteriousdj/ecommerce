@@ -91,7 +91,7 @@ router.delete('/:id', (req, res) => {
 })
     .then(dbTagData => {
         if (!dbTagData) {
-            res.status(404).json({ message: 'No tag found with this id' });
+            res.status(404).json({ message: 'Not Applicable' });
             return;
         }
         res.json(dbTagData);
